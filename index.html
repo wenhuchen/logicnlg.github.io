@@ -38,18 +38,21 @@
     <body>
 
         <h2 id='first' align="center"> Explore LogicNLG</h2>
-        <div id='title'></div>
-        <div id="table1"></div>
-        <div id='Transformer'>
+        <div id='title' align="center"></div>
+        <div id="table1" align="center"></div>
+        <br>
+        <div id='Transformer' align="center">
         </div>
         <br>
-        <div id='GPT'>
+        <div id='GPT' align="center">
         </div>
         <br>
-        <div id='C2T'>
+        <div id='C2T' align="center">
         </div>                
         <div class="row" align='center'>
+        <br>
         <button type="button" onclick="prev()">Prev</button> <button type="button" onclick="next()">Next</button><br>
+        <br>
         <input type="text" id="table_id">
         <button type="button" onclick="find()">Jump</button>        
         
@@ -238,7 +241,9 @@ function parseDSV(data, separator) {
     .wrapper {
         display: flex;
     }
-
+    #table1 {
+        background-color: ghostwhite
+    }
     #Transformer {
         flex: 0 0 50%;
         background-color: whitesmoke
